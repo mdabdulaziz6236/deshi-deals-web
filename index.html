@@ -1,19 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deshi-Deals</title>
-</head>
-<body>
+    <!-- fav icon link  -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!--  daisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- header section  -->
     <header>
-
+      <div class="flex justify-center items-center shadow py-3">
+        <div>
+          <img src="./assets/logo.png" alt="" class="w-19" />
+        </div>
+        <div class="">
+          <h1 class="text-[40px] text-[#E71580]">
+            Deshi <span class="font-bold">Deals</span>
+          </h1>
+          <p class="text-[18px] text-gray-500">Cheap Price , Best Quality</p>
+        </div>
+      </div>
     </header>
     <main>
+      <!-- banner section -->
+      <section
+        class="banner flex flex-col justify-center items-center bg-gradient-to-b from-white to-[#f6ddea] mt-[1px]"
+        >
+        <div>
+          <h1
+            class="mt-[80px] text-center font-bold text-[58px] text-[#111111]"
+          >
+            Purchase TK 200 or above & get <br />
+            <span class="text-[#E527B2]">20% off</span>
+          </h1>
+        </div>
+        <div class="flex justify-center items-center flex-row pt-9">
+          <p class="text-[24px] font-medium">Use Promo Code</p>
+          <button
+            class="bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px] ml-40"
+          >
+            SELL200
+          </button>
+        </div>
+        <div class="">
+          <img src="./assets/hero-bg.png" alt="" class="relative z-50 " />
+        </div>
+      </section>
+      <!-- extra empty section -->
+      <section class="bg-white h-[120px] w-full relative -top-30">
 
+      </section>
+      <!-- card and calculate section  -->
+      <section class=" w-11/12 mx-auto bg-white">
+        <section class="grid  col-span-12 grid-flow-col gap-23 ">
+          <!-- cart box section  -->
+          <div id="cart-box" class=" col-span-9 ">
+            <section class="mb-[60px]">
+              <h1 class="font-semibold text-[40px] mb-8">Kitchenware</h1>
+              <div class="grid grid-flow-col col-span-3 gap-3">
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-1.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        K. Accessories
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">80</span> Tk</p>
+                    <div class="card-actions">
+                      <button  class="cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-2.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        Thala Bati
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">120</span> Tk</p>
+                    <div class="card-actions">
+                      <button class=" cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-3.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        Patil
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">150</span> Tk</p>
+                    <div class="card-actions">
+                      <button class="cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="mb-[60px]">
+              <h1 class="font-semibold text-[40px] mb-8">Kitchenware</h1>
+              <div class="grid grid-flow-col col-span-3 gap-3">
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-1.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        K. Accessories
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">80</span> Tk</p>
+                    <div class="card-actions">
+                      <button  class="cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-2.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        Thala Bati
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">120</span> Tk</p>
+                    <div class="card-actions">
+                      <button class=" cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-3.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        Patil
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">150</span> Tk</p>
+                    <div class="card-actions">
+                      <button class="cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="mb-[60px]">
+              <h1 class="font-semibold text-[40px] mb-8">Kitchenware</h1>
+              <div class="grid grid-flow-col col-span-3 gap-3">
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-1.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        K. Accessories
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">80</span> Tk</p>
+                    <div class="card-actions">
+                      <button  class="cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-2.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        Thala Bati
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">120</span> Tk</p>
+                    <div class="card-actions">
+                      <button class=" cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="card-1" class="card bg-base-100 w-96 shadow-sm ">
+                  <figure class="  bg-gray-300 mx-8 mt-8 rounded-lg">
+                    <img id="card-image"
+                      src="./assets/kitchen-3.png"
+                      alt="Shoes"
+                      class="rounded-xl p-5"
+                    />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 >⭐⭐⭐⭐⭐</h2>
+                    <p id="card-title" class="card-title font-bold text-[23px]">
+                        Patil
+                    </p>
+                    <p class="font-medium text-[20px]"><span id="product-price">150</span> Tk</p>
+                    <div class="card-actions">
+                      <button class="cart-btn bg-[#E527B2] text-white text-[24px] font-semibold rounded-[10px] btn-secondary w-[271px] h-[69px]">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          </div>
+          <!-- calculate and clear button section  -->
+          <div class="shadow col-span-3">
+            <div class="bg-white p-5 mb-10">
+              <h1 class="font-medium text-[24px] mb-4">Have coupon?</h1>
+              <div class="join flex justify-center items-center">
+               <input class="input join-item h-[56px] w-[60%] text-[23px] font-medium" placeholder="Code Coupon" />
+               <button class="btn join-item rounded-r-full h-[56px] w-[40%] text-white bg-[#E527B2] text-[23px] font-medium">Apply</button>
+              </div>
+            </div>
+            <div class="align-baseline p-5">
+              <button id="clear-btn" class="bg-pink-400 text-white text-[23px] font-semibold rounded-[10px] btn-secondary w-[120px] h-[45px]">
+                        Clear All
+              </button>
+            </div>
+            <div id="card-container">
+              
+            </div>
+            
+            <div class="bg-white p-5">
+              
+              <div class="text-gray-600">
+                <hr>
+                <h3 class="font-medium text-[24px] ">Total Price : <span id="total-price" class="text-gray-800 "> 0 </span>Tk</h3>
+                <h3 class="font-medium text-[24px] ">Discount :<span class="text-gray-800 "> 0 </span>Tk</h3>
+                <h3 class="font-medium text-[24px] ">Total :<span id="product-quantity" class="text-gray-800 "> 0 </span> Piece</h3>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
-    <script>
-        
-    </script>
-</body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
